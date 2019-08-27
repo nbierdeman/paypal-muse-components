@@ -48,6 +48,11 @@
   },
   "jest": {
     "globals": {
+      "__muse__": {
+        "serverConfig": {
+          "assetsUrl": "https://paypal.com/assets/"
+        }
+      },
       "__DEBUG__": true,
       "__ENV__": "test",
       "__PORT__": 8000,
@@ -61,7 +66,6 @@
     "moduleDirectories": [
       "node_modules"
     ],
-    "testEnvironment": "jsdom",
     "setupFiles": [
       "<rootDir>/test/paypal.js"
     ],
